@@ -1,0 +1,56 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url(./header_img.png) no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.header-contact{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contact h2{
+    font-weight: 500;
+    font-size: max(4.5vw,22px);
+    color: white;
+}
+
+.header-contact P{
+    color: white;
+    font-size: 1vw;
+}
+
+.header-contact button{
+  
+    color: #a82d49;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+@media (max-width:1050px) {
+  
+    .header-contact{
+        max-width: 45%;
+    }  
+}
+@media (max-width:750px) {
+  
+    .header-contact{
+        max-width: 65%;
+    }  
+    .header-contact P{
+        display: none;
+    }
+    .header-contact button{
+        padding: 2vw 4vw;
+    }
+}
