@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
 import axios from 'axios';
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
   const {getTotalAmount,token,food_list,cartItems,url}=useContext(StoreContext);
@@ -50,6 +52,18 @@ const PlaceOrder = () => {
       alert("error");
     }
   }
+
+  const navigate=useNavigate();
+
+  useEffect(()=>{
+    if(!token){
+      navigate('/cart')
+    }
+    else if(getTotalAmount()===0)
+    {
+      navigate('/cart')
+    }
+  },[token])
 
 
 
