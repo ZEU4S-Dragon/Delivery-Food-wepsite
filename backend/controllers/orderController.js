@@ -9,7 +9,7 @@ const stripe = new Stripe(process.env.STRIBE_SECRET_KEY)
 
 const placeOrder = async (req,res)=>{
 
-    const frontend_url ="http://localhost:5173";
+    const frontend_url ="http://localhost:5175";
 
 
     try {
