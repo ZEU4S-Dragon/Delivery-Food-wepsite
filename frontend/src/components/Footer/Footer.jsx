@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer bg-[#a82d49]/90" id="footer">
       <div className="footer-contact">
         <div className="footer-contact-left">
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo2} alt="" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed
             consequatur, quos optio delectus laboriosam reprehenderit veritatis
