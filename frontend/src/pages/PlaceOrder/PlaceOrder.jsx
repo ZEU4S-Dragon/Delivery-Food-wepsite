@@ -68,8 +68,8 @@ const PlaceOrder = () => {
 
 
   return (
-    <form onSubmit={placeOrder}>
-        <div className="place-order">
+    <form className='place-order' onSubmit={placeOrder}>
+        
           <div className="place-order-left">
                <p className="title">Delivery information</p>
                <div className="multi-fields">
@@ -82,7 +82,7 @@ const PlaceOrder = () => {
                  <input required name='city' onChange={onChangeHandler} value={data.city} type="text" placeholder='City'/>
                  <input required name='state' onChange={onChangeHandler} value={data.state} type="text" placeholder='State' />
                </div>
-               <div r className="multi-fields">
+               <div className="multi-fields">
                  <input required name='zipcode' onChange={onChangeHandler} value={data.zipcode} type="text" placeholder='Zip code'/>
                  <input required name='country' onChange={onChangeHandler} value={data.country} type="text" placeholder='Country' />
                </div>
@@ -109,7 +109,7 @@ const PlaceOrder = () => {
           <button type='submit'>PROCEED TO PAYMENT</button>
 
           </div>
-        </div>
+        
     </form>
   )
 }
